@@ -1,11 +1,6 @@
 console.log("plant app connected");
 
-// get dragable buttons
-let draggables = document.querySelectorAll("button")
-// get calendar days
-let days = document.querySelectorAll(".day")
-// get buttons container
-let btnContainer=document.querySelector(".buttons");
+
 
 
 function onDragStart(event){
