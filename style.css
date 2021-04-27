@@ -93,7 +93,17 @@ button{
     .day{
         font-size: 12px;
     }
-    .btn-div{
+    .btn{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 850px) 
+{ 
+    .day{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 10px;
     }
 }
