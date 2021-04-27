@@ -1,0 +1,99 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* header{
+    height: 20vh;
+} */
+.header-one{
+    color: #5F8072;
+    text-align: center;
+    font-size: 60px;
+}
+
+.header-two{
+    color: #AAC7A5;
+    text-align: center;
+}
+
+button{
+    border-radius: 50px;
+    color: #DDE6BF;
+    background-color: #1A4242;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    cursor: move;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    
+}
+
+.btn-div{
+    margin: 0 auto;
+}
+
+
+.calendar-main{
+    width: 90%;
+    /* border: 2px solid green; */
+    margin: 0 auto;
+   
+    
+}
+.calendar-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(206, 206, 206);
+}
+
+.day{
+    height: 40vh;
+    border: 1px solid #FCF7D7;
+    font-size: 20px;
+}
+
+.moving{
+    transform: scale(1.2,1.2);
+}
+
+.delete{
+    display: none;
+}
+
+.day-name{
+    padding-bottom: 5px;
+    padding-top: 0px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.btn-click{
+    text-decoration: line-through;
+}
+
+
+
+
+@media (max-width: 1200px) 
+{ 
+    .day{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) 
+{ 
+    .day{
+        font-size: 12px;
+    }
+    .btn-div{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+           <h1 class="header-one">Plant Life</h1>
+           <h2 class="header-two">Drag and drop to create a schedule</h2>
+       </header>
+
+       <section class="buttons"> 
+            <div class="btn-div">
+                <button class="btn" draggable="true" ondragstart="onDragStart(event)" id="btn1">Water &#x1F4A6;<span class="delete"><i class="far fa-trash-alt"></i></span></button>
+            </div>
+            <div class="btn-div">
+                <button draggable="true" ondragstart="onDragStart(event)" id="btn2" >Feed &#x1F347;<span class="delete"><i class="far fa-trash-alt"></i></span></button>
+            </div>
+            <div class="btn-div">
+                <button draggable="true"  ondragstart="onDragStart(event)" id="btn3">Prune &#x1F343;<span class="delete"><i class="far fa-trash-alt"></i></span></button>
+            </div>
+            <div class="btn-div">
+                <button draggable="true" ondragstart="onDragStart(event)" id="btn4">Harvest &#x1F959;<span class="delete"><i class="far fa-trash-alt"></i></span></button>
+            </div>
+       </section>
+
+       <section class="calendar-main">
+            <div class="calendar-container">
+                <div class="day" id="day1" ondragover="onDragOver(event)" ondrop="onDrop(event)" ><h2 class="day-name">Monday</h2></div>
+                <div class="day" id="day2" ondragover="onDragOver(event)" ondrop="onDrop(event)"><h2 class="day-name">Tuesday</h2></div>
+                <div class="day" id="day3" ondragover="onDragOver(event)" ondrop="onDrop(event)"><h2 class="day-name">Wednesday</h2></div>
+                <div class="day" id="day4" ondragover="onDragOver(event)" ondrop="onDrop(event)"><h2 class="day-name">Thursday</h2></div>
+                <div class="day" id="day5" ondragover="onDragOver(event)" ondrop="onDrop(event)"><h2 class="day-name">Friday</h2></div>
+                <div class="day" id="day6" ondragover="onDragOver(event)" ondrop="onDrop(event)"><h2 class="day-name">Saturday</h2></div>
+                <div class="day" id="day7" ondragover="onDragOver(event)" ondrop="onDrop(event)"><h2 class="day-name">Sunday</h2></div>
+                
+            </div>     
+       </section>
+        
+        <script src="app.js" async defer></script>
+        <script src="https://kit.fontawesome.com/a3249904fb.js" crossorigin="anonymous"></script>
+    </body>
+</html>
