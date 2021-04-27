@@ -1,2 +1,2 @@
 # Gardening-To-Do-App
-To-List style drag and drop page
+To-Do list style drag and drop page
